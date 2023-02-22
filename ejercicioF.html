@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3 - F</title>
+</head>
+<body>
+
+    <!-- realizar la suma de todos los números pares entre N y M donde N y M los ingresa el usuario. -->
+    
+    <script>
+        let n = parseInt(prompt("Ingresa el primer número:"));
+        let m = parseInt(prompt("Ingresa el segundo número:"));
+
+        let sum = 0;
+
+        for (let i = n; i <= m; i++) {
+            
+        if (i % 2 === 0) {
+            sum += i;
+        }
+        }
+
+        console.log("La suma de los números pares entre " + n + " y " + m + " es: " + sum);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3 - G</title>
+</head>
+<body>
+
+    <!-- realizar la sumatoria de los primeros N números donde N es ingresado por el usuario. -->
+    
+    <script>
+
+        let n = parseInt(prompt("Ingresa un número:"));
+
+        let sum = 0;
+
+        // Iteramos desde 1 hasta n
+        for (let i = 1; i <= n; i++) {
+            sum += i;
+        }
+
+        console.log("La sumatoria de los primeros " + n + " números es: " + sum);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3 - E</title>
+</head>
+<body>
+    
+    <!-- pedir al usuario que ingrese un numero en un prompt, hacer la suma de todos los digitos, validar que el numero ingresado no contenga letras.-->
+
+    <script>
+        let num = prompt("Ingresa un número:");
+
+        // Validamos que el número ingresado no contenga letras
+        if (!/^[0-9]+$/.test(num)) {
+        console.log("El número ingresado contiene letras. Por favor, intenta de nuevo.");
+        } else {
+        let sum = 0;
+        for (let i = 0; i < num.length; i++) {
+            sum = sum + parseInt(num[i]);
+        }
+        console.log("La suma de los dígitos es: " + sum);
+        }
+
+    </script>
+</body>
+</html>
